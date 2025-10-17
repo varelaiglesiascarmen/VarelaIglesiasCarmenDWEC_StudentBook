@@ -1,100 +1,110 @@
-# Actividades Prácticas – Tema 3: JavaScript
+# Actividades Prácticas – Tema 4: JavaScript
+Proyecto con ejercicios prácticos para aprender manipulación del DOM, funciones y lógica en JavaScript
 
-Este repositorio contiene un conjunto de **10 actividades prácticas** que refuerzan los contenidos del **Tema 3: JavaScript**: variables, tipos de datos, conversión de tipos, eventos, manipulación del DOM y limitaciones del lenguaje.
+**Aclaración:**  
+Para realizar esta actividad cree una const que dentro guarda un falso array de botones que bucan la funcion que les corresponde hacer 'onClick' interpretados por un id único para cada uno de ellos
+
+**Captura de pantalla:**  
+![Actividad 1](const_Acciones.png)
+
+**¿Cómo funciona?**
+![Actividad 1](for_Acciones.png)
+
+---
+
+## Cómo ejecutar
+1. Abrir `index.html` en un navegador moderno.
+2. Hacer clic en los botones para ejecutar cada actividad.
 
 ---
 
 ## Actividad 1: Declarar variables y mostrar en consola
 **Descripción:**  
-Declara tres variables (`nombre`, `edad` y `ciudad`) y muéstralas en la consola. Identifica el tipo de dato con `typeof`.  
+Escribe un programa que genere una pirámide de asteriscos. La base de la pirámide debe tener cinco niveles 
 
 **Captura de pantalla:**  
-![Actividad 1](code1.png)
+![Actividad 1](act1.png)
 
 ---
 
 ## Actividad 2: Concatenación de cadenas y números
 **Descripción:**  
-Concatena cadenas y números usando el operador `+` y template literals.  
+Crea un programa que imprima los números del 1 al 100. Para los múltiplos de 4, debe imprimir "FrontEnd" en lugar del número. Para los múltiplos de 7, debe imprimir "BackEnd". Si un número es múltiplo de ambos, debe imprimir "FullStack" junto con el número
 
 **Captura de pantalla:**  
-![Actividad 2](concatenation.png)
+![Actividad 2](act2.png)
 
 ---
 
 ## Actividad 3: Conversión de tipos
 **Descripción:**  
-Declara una variable y conviértela a distintos tipos (`Number`, `String`, `Boolean`). Explica el resultado obtenido.  
+Desarrolla un programa que pida un número y calcule su factorial. El factorial de un número es el resultado de multiplicar ese número por todos los números enteros positivos menores que él  
 
 **Captura de pantalla:**  
-![Actividad 3](conversionVariables.png)
+![Actividad 3](act3.png)
 
 ---
 
 ## Actividad 4: Variable no declarada
 **Descripción:**  
-Reproduce el caso práctico `Variable address` con una variable no declarada. Observa el error y corrígelo.  
+Escribe un programa que solicite dos números al usuario y que imprima los múltiplos de 8 que se encuentren entre los dos números, independientemente del orden en que se ingresen  
 
 **Captura de pantalla:**  
-![Actividad 4](adress.png)
+![Actividad 4](act4.png)
 
 ---
 
 ## Actividad 5: Formulario y validación
 **Descripción:**  
-Implementa un formulario sencillo (input + botón) y valida que el campo no esté vacío antes de mostrar un `alert`.  
+Crea un programa que pida un número y determine si es un número primo. Un número es primo si solo es divisible por 1 y por sí mismo  
 
 **Captura de pantalla:**  
-![Actividad 5](validateForm.png)
+![Actividad 5](act5.png)
 
 ---
 
 ## Actividad 6: Conversión de texto a número
 **Descripción:**  
-Convierte datos de texto a número usando `parseInt` y `parseFloat`. Controla el caso de `NaN`.  
+Desarrolla un programa que elija un número aleatorio entre 1 y 10. El usuario debe adivinar el número ingresando valores hasta acertar. El programa debe informar cuándo el número es correcto
 
 **Captura de pantalla:**  
-![Actividad 6](stringToNumber.png)
+![Actividad 6](act6.png)
 
 ---
 
 ## Actividad 7: Comentarios en JavaScript
 **Descripción:**  
-Crea un código con comentarios de línea y de bloque que explique el funcionamiento de un script de 5-6 líneas.  
+Crea un programa que pida un número de tres dígitos y determine si es un número de Armstrong. Un número es de Armstrong si la suma de los cubos de sus dígitos es igual al número original 
 
 **Captura de pantalla:**  
-![Actividad 7](commentsExample.png)
+![Actividad 7](act7.png)
 
 ---
 
 ## Actividad 8: Manipulación del DOM
 **Descripción:**  
-Cambia el contenido y el estilo de un párrafo con JavaScript al hacer clic en un botón.  
+Escribe un programa que pida una cadena de texto al usuario y cuente cuántas vocales contiene 
 
 **Captura de pantalla:**  
-![Actividad 8](manipulateDOM.png)
+![Actividad 8](act8.png)
 
 ---
 
 ## Actividad 9: Captura de evento de teclado
 **Descripción:**  
-Captura un evento del teclado en un campo de texto e imprime en consola la tecla pulsada.  
+Desarrolla un programa que imprima el valor de PI con cuatro decimales  
 
-**Captura de pantalla:**  
-![Actividad 9](keyboardEvent.png)
 
 ---
 
 ## Actividad 10: Limitación de JavaScript en navegador
 **Descripción:**  
-Reflexiona sobre una limitación de JavaScript en el navegador, por ejemplo el acceso a archivos locales, e ilústrala con un ejemplo.  
+Crea un programa que pida al usuario una frase y le permita reemplazar una palabra específica por otra que elija  
 
-**Captura de pantalla:**  
-![Actividad 10](leerArchivoLocal.png)
 
 ---
 
 **Autor:** Carmen Varela Iglesias  
+**Tecnologías:** CodeSnap, Visual Studio y GitHub  
 **Curso:** Desarrollo Web entorno Cliente  
-**Tema:** JavaScript – Variables, Tipos de Datos y Eventos
 **Actividad:** 4

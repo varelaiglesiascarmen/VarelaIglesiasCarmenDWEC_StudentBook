@@ -147,21 +147,18 @@ function multiplosDe8(num1, num2) {
         }
     }
 
-    // Retornar como cadena separada por comas, o mensaje si no hay múltiplos
     return res.length > 0 ? res.join(', ') : 'No hay múltiplos de 8';
 }
 
 //Act 5
-// Función que determina si un número es primo
 function esPrimo(numPrimo) {
-    if (numPrimo < 2) return false; // 0 y 1 no son primos
+    if (numPrimo < 2) return false;
 
-    // Solo necesitamos verificar hasta la raíz cuadrada de num
     for (let i = 2; i <= Math.sqrt(numPrimo); i++) {
-        if (numPrimo % i === 0) return false; // divisible, no es primo
+        if (numPrimo % i === 0) return false; 
     }
 
-    return true; // si no se encontró ningún divisor, es primo
+    return true; 
 }
 
 // Act 6
@@ -179,11 +176,9 @@ function esArmstrong(n) {
 
 //Act 8 
 function contarVocales(texto) {
-    // Convertimos todo a minúsculas para simplificar la comparación
     texto = texto.toLowerCase();
     let contador = 0;
 
-    // Recorremos cada carácter del texto
     for (let i = 0; i < texto.length; i++) {
         if ('aeiouáéíóúü'.includes(texto[i])) {
             contador++;
