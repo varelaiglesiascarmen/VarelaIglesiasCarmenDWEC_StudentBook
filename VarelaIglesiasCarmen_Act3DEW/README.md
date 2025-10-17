@@ -9,7 +9,7 @@ Este repositorio contiene un conjunto de **10 actividades prácticas** que refue
 Declara tres variables (`nombre`, `edad` y `ciudad`) y muéstralas en la consola. Identifica el tipo de dato con `typeof`.  
 
 **Captura de pantalla:**  
-![Actividad 1](code1.png)
+![Actividad 1](img/snapcode/code1.png)
 
 ---
 
@@ -18,7 +18,7 @@ Declara tres variables (`nombre`, `edad` y `ciudad`) y muéstralas en la consola
 Concatena cadenas y números usando el operador `+` y template literals.  
 
 **Captura de pantalla:**  
-![Actividad 2](concatenation.png)
+![Actividad 2](img/snapcode/concatenation.png)
 
 ---
 
@@ -27,7 +27,7 @@ Concatena cadenas y números usando el operador `+` y template literals.
 Declara una variable y conviértela a distintos tipos (`Number`, `String`, `Boolean`). Explica el resultado obtenido.  
 
 **Captura de pantalla:**  
-![Actividad 3](conversionVariables.png)
+![Actividad 3](img/snapcode/conversionVariables.png)
 
 ---
 
@@ -36,7 +36,7 @@ Declara una variable y conviértela a distintos tipos (`Number`, `String`, `Bool
 Reproduce el caso práctico `Variable address` con una variable no declarada. Observa el error y corrígelo.  
 
 **Captura de pantalla:**  
-![Actividad 4](adress.png)
+![Actividad 4](img/snapcode/adress.png)
 
 ---
 
@@ -45,7 +45,7 @@ Reproduce el caso práctico `Variable address` con una variable no declarada. Ob
 Implementa un formulario sencillo (input + botón) y valida que el campo no esté vacío antes de mostrar un `alert`.  
 
 **Captura de pantalla:**  
-![Actividad 5](validateForm.png)
+![Actividad 5](img/snapcode/validateForm.png)
 
 ---
 
@@ -54,7 +54,7 @@ Implementa un formulario sencillo (input + botón) y valida que el campo no est�
 Convierte datos de texto a número usando `parseInt` y `parseFloat`. Controla el caso de `NaN`.  
 
 **Captura de pantalla:**  
-![Actividad 6](stringToNumber.png)
+![Actividad 6](img/snapcode/stringToNumber.png)
 
 ---
 
@@ -63,7 +63,7 @@ Convierte datos de texto a número usando `parseInt` y `parseFloat`. Controla el
 Crea un código con comentarios de línea y de bloque que explique el funcionamiento de un script de 5-6 líneas.  
 
 **Captura de pantalla:**  
-![Actividad 7](commentsExample.png)
+![Actividad 7](img/snapcode/commentsExample.png)
 
 ---
 
@@ -72,7 +72,7 @@ Crea un código con comentarios de línea y de bloque que explique el funcionami
 Cambia el contenido y el estilo de un párrafo con JavaScript al hacer clic en un botón.  
 
 **Captura de pantalla:**  
-![Actividad 8](manipulateDOM.png)
+![Actividad 8](img/snapcode/manipulateDOM.png)
 
 ---
 
@@ -81,7 +81,7 @@ Cambia el contenido y el estilo de un párrafo con JavaScript al hacer clic en u
 Captura un evento del teclado en un campo de texto e imprime en consola la tecla pulsada.  
 
 **Captura de pantalla:**  
-![Actividad 9](keyboardEvent.png)
+![Actividad 9](img/snapcode/keyboardEvent.png)
 
 ---
 
@@ -90,7 +90,7 @@ Captura un evento del teclado en un campo de texto e imprime en consola la tecla
 Reflexiona sobre una limitación de JavaScript en el navegador, por ejemplo el acceso a archivos locales, e ilústrala con un ejemplo.  
 
 **Captura de pantalla:**  
-![Actividad 10](leerArchivoLocal.png)
+![Actividad 10](img/snapcode/leerArchivoLocal.png)
 
 ---
 
