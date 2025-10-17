@@ -5,10 +5,10 @@ Proyecto con ejercicios prácticos para aprender manipulación del DOM, funcione
 Para realizar esta actividad cree una const que dentro guarda un falso array de botones que bucan la funcion que les corresponde hacer 'onClick' interpretados por un id único para cada uno de ellos
 
 **Captura de pantalla:**  
-![Actividad 1](const_Acciones.png)
+![Actividad 1](img/const_Acciones.png)
 
 **¿Cómo funciona?**
-![Actividad 1](for_Acciones.png)
+![Actividad 1](img/for_Acciones.png)
 
 ---
 
@@ -23,7 +23,7 @@ Para realizar esta actividad cree una const que dentro guarda un falso array de 
 Escribe un programa que genere una pirámide de asteriscos. La base de la pirámide debe tener cinco niveles 
 
 **Captura de pantalla:**  
-![Actividad 1](act1.png)
+![Actividad 1](img/act1.png)
 
 ---
 
@@ -32,7 +32,7 @@ Escribe un programa que genere una pirámide de asteriscos. La base de la pirám
 Crea un programa que imprima los números del 1 al 100. Para los múltiplos de 4, debe imprimir "FrontEnd" en lugar del número. Para los múltiplos de 7, debe imprimir "BackEnd". Si un número es múltiplo de ambos, debe imprimir "FullStack" junto con el número
 
 **Captura de pantalla:**  
-![Actividad 2](act2.png)
+![Actividad 2](img/act2.png)
 
 ---
 
@@ -41,7 +41,7 @@ Crea un programa que imprima los números del 1 al 100. Para los múltiplos de 4
 Desarrolla un programa que pida un número y calcule su factorial. El factorial de un número es el resultado de multiplicar ese número por todos los números enteros positivos menores que él  
 
 **Captura de pantalla:**  
-![Actividad 3](act3.png)
+![Actividad 3](img/act3.png)
 
 ---
 
@@ -50,7 +50,7 @@ Desarrolla un programa que pida un número y calcule su factorial. El factorial 
 Escribe un programa que solicite dos números al usuario y que imprima los múltiplos de 8 que se encuentren entre los dos números, independientemente del orden en que se ingresen  
 
 **Captura de pantalla:**  
-![Actividad 4](act4.png)
+![Actividad 4](img/act4.png)
 
 ---
 
@@ -59,7 +59,7 @@ Escribe un programa que solicite dos números al usuario y que imprima los múlt
 Crea un programa que pida un número y determine si es un número primo. Un número es primo si solo es divisible por 1 y por sí mismo  
 
 **Captura de pantalla:**  
-![Actividad 5](act5.png)
+![Actividad 5](img/act5.png)
 
 ---
 
@@ -68,7 +68,7 @@ Crea un programa que pida un número y determine si es un número primo. Un núm
 Desarrolla un programa que elija un número aleatorio entre 1 y 10. El usuario debe adivinar el número ingresando valores hasta acertar. El programa debe informar cuándo el número es correcto
 
 **Captura de pantalla:**  
-![Actividad 6](act6.png)
+![Actividad 6](img/act6.png)
 
 ---
 
@@ -77,7 +77,7 @@ Desarrolla un programa que elija un número aleatorio entre 1 y 10. El usuario d
 Crea un programa que pida un número de tres dígitos y determine si es un número de Armstrong. Un número es de Armstrong si la suma de los cubos de sus dígitos es igual al número original 
 
 **Captura de pantalla:**  
-![Actividad 7](act7.png)
+![Actividad 7](img/act7.png)
 
 ---
 
@@ -86,7 +86,7 @@ Crea un programa que pida un número de tres dígitos y determine si es un núme
 Escribe un programa que pida una cadena de texto al usuario y cuente cuántas vocales contiene 
 
 **Captura de pantalla:**  
-![Actividad 8](act8.png)
+![Actividad 8](img/act8.png)
 
 ---
 
