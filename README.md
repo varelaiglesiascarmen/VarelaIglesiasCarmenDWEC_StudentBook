@@ -1,6 +1,6 @@
 # Cuaderno de Clase – Desarrollo Web en Entorno Cliente
 
-**Autor:** Carmen Varela Iglesias  
+**Autor:** [Carmen Varela Iglesias](https://github.com/varelaiglesiascarmen)   
 **Asignatura:** Desarrollo Web en Entorno Cliente (DWEC)  
 **Tecnologías:** HTML, CSS, JavaScript  
 **Repositorio:** Ejercicios y prácticas del curso  
@@ -9,7 +9,7 @@
 
 ## Descripción
 
-Este repositorio funciona como un **cuaderno de clase digital** de la asignatura **Desarrollo Web en Entorno Cliente**. Contiene ejercicios prácticos realizados por !Carmen Varela Iglesias[https://github.com/varelaiglesiascarmen], en los que se aplican conceptos de:
+Este repositorio funciona como un **cuaderno de clase digital** de la asignatura **Desarrollo Web en Entorno Cliente**. Contiene ejercicios prácticos realizados por [Carmen Varela Iglesias](https://github.com/varelaiglesiascarmen) , en los que se aplican conceptos de:
 
 - **JavaScript**: lógica, manipulación del DOM, eventos, validaciones, funciones, estructuras de control.  
 - **HTML y CSS**: maquetación, formularios, estilos básicos.  
@@ -47,5 +47,5 @@ Esta dependerá de los proyectos que mande el profesor.
 
 ---
 
-**Autor:** !Carmen Varela Iglesias[https://github.com/varelaiglesiascarmen]  
+**Autor:** [Carmen Varela Iglesias](https://github.com/varelaiglesiascarmen) 
 **Curso:** 2º DAW – Desarrollo Web en Entorno Cliente
