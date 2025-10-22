@@ -1,0 +1,19 @@
+<!--Crear un formulario que nos permita cambiar el título-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cambiar título</title>
+</head>
+<body>
+    <h1 id="titulo">Este es el título que vamos a cambiar</h1>
+    <p>Puedes modificar el título, introduciendo el nuevo título en el cambo de texto y pulsando el botón cambiar título</p>
+    <form name="formulario">
+        <textarea cols="50" rows="2"  id="nuevoTitulo" placeholder="Nuevo título"></textarea><br>
+        <input type="reset" value="Cambiar título" onclick="cambiarTitulo()">
+    </form>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

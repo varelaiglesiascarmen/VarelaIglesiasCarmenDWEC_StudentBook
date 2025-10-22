@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Añadir títulos de distintos niveles</title>
+</head>
+<body style="background-color: beige;">
+    <div style="background-color: rgba(2, 2, 5, 0.418);">
+        <h1 style="text-align: center;">Crea un título y dos secciones.</h1>
+    </div>
+    
+    <hr>
+    <div id="div1">
+
+    </div>
+
+    <form>
+        <h4>Introduce el título: </h4>
+        <!--Para darle tamaño al textarea se usan cols y rows -->
+        <textarea cols="50" rows="2" id="campoTitulo" placeholder="Título"></textarea>
+        <br>
+        <h4>Introduce la sección 1: </h4>
+        <textarea cols="50" rows="2" id="campoSeccion1" placeholder="Primera sección"></textarea>
+        <br>
+        <h3>Introduce los párrafos de la primera sección: </h3>
+        <textarea cols="50" rows="2" id="parrafo1" placeholder="Párrafos primera sección"></textarea>
+        <br>
+        <h4>Introduce la sección 2: </h4>
+        <textarea cols="50" rows="2" id="campoSeccion2" placeholder="Segunda sección"></textarea>
+        <br>
+        <h3>Introduce los párrafos de la segunda sección: </h3>
+        <textarea cols="50" rows="2" id="parrafo2" placeholder="Párrafos segunda sección"></textarea>
+        <br>
+        <br><br>
+        <!--Hacemos un botón de tipo reset para que lo que escribamos al enviarlo se borre y podamos seguir.-->
+        <button type="button" style="width: 100px; height: 40px; background-color: rgba(0, 0, 255, 0.212);" onclick="rellenarInformacion2()">Rellenar</button>
+    </form>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

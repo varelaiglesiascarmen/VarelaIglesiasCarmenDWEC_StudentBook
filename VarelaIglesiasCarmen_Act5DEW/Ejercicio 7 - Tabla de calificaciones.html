@@ -1,0 +1,33 @@
+<!--Añadir los datos de las nuevas filas partiendo de una fila cabecera-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <br>
+    <h1 style="text-align: center;">Añade casillas a la tabla</h1>
+    <table style="border-align: center; width: 40%;">
+        <thead>
+            <th>Alumno</th>
+            <th>Calificación</th>
+        </thead>
+        <tbody id="cuerpo" style="text-align: center;">
+
+        </tbody>
+    </table>
+    <br><br>
+    <form style="align: center;">
+        <h4>Nombre del alumno:</h4><textarea cols="40" rows="2" placeholder="Nombre" id="dato1"></textarea>
+        <h4>Calificación: </h4><textarea cols="40" rows="2" placeholder="Nota" id="dato2"></textarea> <br><br>
+        <input type="button" value="Añadir elemento" onclick="aniadeElementos()">
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
