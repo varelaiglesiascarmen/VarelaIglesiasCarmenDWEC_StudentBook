@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>DWEC - Actividades JavaScript</title>
+    <style>
+        body { font-family: Arial; padding: 20px; background: #ffe09e; }
+        h2 { background: #254d91; color: white; padding: 10px; 
+            border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.5);}
+        .actividad {
+            background: white; padding: 15px; margin-bottom: 20px;
+            border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.5);
+        }
+        input, button, textarea { margin: 5px 0; padding: 8px; width: 95%; border-bottom: none;
+        border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.5); }
+        button { width: auto; cursor: pointer; border-bottom: none; background-color: #254d91; color: white;}
+        button:hover { background-color: #ffe09e; color: #000000; transition: 0.2s; }
+    </style>
+</head>
+<body>
+
+    <div class="actividad">
+        <h2>Actividad 1: Análisis Minúsculas / Mayúsculas</h2>
+        <input type="text" id="texto1" placeholder="Escribe un texto">
+        <button onclick="analizarTexto()">Analizar</button>
+        <p id="resultado1"></p>
+    </div>
+
+    <div class="actividad">
+        <h2>Actividad 2: Bonoloto</h2>
+        <button onclick="bonoloto()">Generar Bonoloto</button>
+        <p id="resultado2"></p>
+    </div>
+
+    <div class="actividad">
+        <h2>Actividad 3: Calcular Edad</h2>
+        <input type="date" id="fechaNacimiento">
+        <button onclick="calcularEdad()">Calcular edad</button>
+        <p id="resultado3"></p>
+    </div>
+
+    <div class="actividad">
+        <h2>Actividad 4: Objeto Window</h2>
+        <button onclick="abrirVentana()">Abrir ventana</button>
+        <button onclick="moverVentana()">Mover</button>
+        <button onclick="redimensionarVentana()">Redimensionar</button>
+        <button onclick="cerrarVentana()">Cerrar</button>
+    </div>
+
+    <div class="actividad">
+        <h2>Actividad 5: Hora Actual</h2>
+        <input type="number" id="hora">
+        <input type="number" id="min">
+        <input type="number" id="seg">
+        <button onclick="ponerHora()">Obtener Hora Actual</button>
+    </div>
+
+    <div class="actividad">
+        <h2>Actividad 6: Tiempo en la Web</h2>
+        <p id="tiempoWeb">0 segundos</p>
+    </div>
+
+    <div class="actividad">
+        <h2>Actividad 7: Convertidor de Temperatura</h2>
+        <input type="number" id="temp">
+        <button onclick="celsiusAF()">A Fahrenheit</button>
+        <button onclick="fahrenheitAC()">A Celsius</button>
+        <p id="resultado7"></p>
+    </div>
+
+    <div class="actividad">
+        <h2>Actividad 8: Calculadora Básica</h2>
+        <input type="number" id="num1" placeholder="Número 1">
+        <input type="number" id="num2" placeholder="Número 2">
+        <button onclick="calc('+')">+</button>
+        <button onclick="calc('-')">-</button>
+        <button onclick="calc('*')">*</button>
+        <button onclick="calc('/')">/</button>
+        <p id="resultado8"></p>
+    </div>
+
+    <div class="actividad">
+        <h2>Actividad 9: Contador de Palabras</h2>
+        <textarea id="texto9" oninput="contarPalabras()"></textarea>
+        <p id="resultado9">0 palabras</p>
+    </div>
+
+    <!-- JS EXTERNO -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
