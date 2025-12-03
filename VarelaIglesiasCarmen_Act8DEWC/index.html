@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Soluciones - Actividades 8: Formularios y eventos</title>
+  <style>
+    body{font-family:system-ui,Arial;line-height:1.5;padding:20px;max-width:900px;margin:auto}
+    section{border:1px solid #ddd;padding:12px;margin:12px 0;border-radius:8px}
+    label{display:block;margin-top:8px}
+    .msg{margin-top:6px;font-size:.95rem}
+    .error{color:#9b0000}
+    .ok{color:#006400}
+    .warning{color:#a65a00}
+    input,textarea,button{font:inherit;padding:6px 8px;margin-top:4px}
+    .row{display:flex;gap:8px;flex-wrap:wrap}
+    .small{width:180px}
+  </style>
+</head>
+<body>
+  <h1>Soluciones - Actividades 8: Formularios y eventos</h1>
+  <p>Archivo con implementaciones (HTML + JavaScript) de los ejercicios del PDF. Cada sección está numerada según el enunciado.</p>
+
+  <!-- 1 -->
+  <section id="ex1">
+    <h2>1. Validación de un campo de correo electrónico</h2>
+    <form id="form-email">
+      <label for="email">Correo electrónico:</label>
+      <input id="email" type="email" placeholder="usuario@ejemplo.com">
+      <div class="msg" id="email-msg"></div>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- 2 -->
+  <section id="ex2">
+    <h2>2. Comprobación de campos obligatorios</h2>
+    <form id="form-required">
+      <label>Nombre:<input name="nombre" type="text"></label>
+      <label>Apellidos:<input name="apellidos" type="text"></label>
+      <label>Teléfono:<input name="telefono" type="tel"></label>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- 3 -->
+  <section id="ex3">
+    <h2>3. Mostrar y ocultar contraseñas</h2>
+    <form id="form-pass">
+      <label>Contraseña:<input id="pass" type="password"></label>
+      <label>Confirmar contraseña:<input id="pass2" type="password"></label>
+      <label><input id="show-pass" type="checkbox"> Mostrar contraseñas</label>
+      <div class="msg" id="pass-msg"></div>
+      <button type="submit">Registrarse</button>
+    </form>
+  </section>
+
+  <!-- 4 -->
+  <section id="ex4">
+    <h2>4. Validación de longitud de texto (mínimo 50 caracteres)</h2>
+    <form id="form-comment">
+      <label>Comentario:<textarea id="comment" rows="4" cols="60"></textarea></label>
+      <div class="msg" id="comment-msg"></div>
+      <button type="submit">Enviar comentario</button>
+    </form>
+  </section>
+
+  <!-- 5 -->
+  <section id="ex5">
+    <h2>5. Validación con expresiones regulares (usuario solo letras y números)</h2>
+    <form id="form-username">
+      <label>Nombre de usuario:<input id="username" type="text" placeholder="sin espacios ni caracteres especiales"></label>
+      <div class="msg" id="username-msg"></div>
+      <button type="submit">Comprobar</button>
+    </form>
+  </section>
+
+  <!-- 6 -->
+  <section id="ex6">
+    <h2>6. Detectar cambios en un campo &lt;input&gt;</h2>
+    <label>Escribe algo y cambia fuera del campo:</label>
+    <input id="change-input" type="text">
+    <div class="msg" id="change-msg"></div>
+  </section>
+
+  <!-- 7 -->
+  <section id="ex7">
+    <h2>7. Contador de caracteres en un &lt;textarea&gt; (límite 200)</h2>
+    <label>Texto largo:<textarea id="ta7" rows="5" cols="60"></textarea></label>
+    <div class="msg" id="ta7-msg"></div>
+  </section>
+
+  <!-- 8 -->
+  <section id="ex8">
+    <h2>8. Prevención del envío del formulario</h2>
+    <form id="form-prevent">
+      <label>Campo obligatorio:<input id="must" type="text"></label>
+      <div class="msg" id="prevent-msg"></div>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- 9 -->
+  <section id="ex9">
+    <h2>9. Restablecer formulario al hacer clic en un botón (confirmación)</h2>
+    <form id="form-reset">
+      <label>Campo A:<input name="a" type="text"></label>
+      <label>Campo B:<input name="b" type="text"></label>
+      <div class="row">
+        <button type="reset">Restablecer</button>
+        <button type="submit">Enviar</button>
+      </div>
+      <div class="msg" id="reset-msg"></div>
+    </form>
+  </section>
+
+  <!-- 10 -->
+  <section id="ex10">
+    <h2>10. Cambiar el fondo de un campo al enfocarse</h2>
+    <form id="form-focus">
+      <label>Nombre:<input class="focusable" type="text"></label>
+      <label>Apellidos:<input class="focusable" type="text"></label>
+      <label>Ciudad:<input class="focusable" type="text"></label>
+    </form>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
