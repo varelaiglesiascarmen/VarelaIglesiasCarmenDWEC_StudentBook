@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT 9 | CVI</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .formulario-container { max-width: 400px; margin: 20px 0; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+        .campo { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"] { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        .error-mensaje { color: red; font-size: 0.9em; margin-top: 5px; height: 1.2em; }
+        button { padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; margin-top: 10px; }
+        button:hover { background-color: #0056b3; }
+        .flow-example, .cookie-practice { margin-top: 30px; padding: 15px; border: 1px solid #eee; }
+        #padre { background-color: #e0f7fa; padding: 20px; border: 2px solid #00bcd4; }
+        #hijo { background-color: #80deea; padding: 10px; }
+    </style>
+</head>
+<body>
+
+    <h2>Act 2: carga con `onload`</h2>
+    <p id="mensaje">El contenido de la página aún se está cargando...</p>
+    <!-- picsum es una fuente de imagenes que carga al azar imágenes con la misma funcionalidad que un Lorem Ipsum-->
+    <img src="https://picsum.photos/400/200" alt="Imagen de ejemplo" id="miImagen">
+
+    <h2>Act 3: Expresiones regulares</h2>
+    <div class="formulario">
+        <h2>Validación de Campos Numéricos</h2>
+        
+        <form id="formularioNumeros" onsubmit="return validarFormulario(event)">
+            
+            <div class="campo">
+                <label for="campo1">Campo 1 (Solo Enteros):</label>
+                <input type="text" id="campo1" name="campo1">
+                <div id="error1" class="error-mensaje"></div>
+            </div>
+
+            <div class="campo">
+                <label for="campo2">Campo 2 (Enteros o Decimales):</label>
+                <input type="text" id="campo2" name="campo2">
+                <div id="error2" class="error-mensaje"></div>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <h2>Act 4: Flujo de Eventos (Captura y Burbujeo)</h2>
+    <div class="flow-example">
+        <div id="padre">
+            PADRE: (Revisa la consola al hacer clic en el hijo)
+            <div id="hijo">
+                HIJO: Clic Aquí
+            </div>
+        </div>
+    </div>
+
+    <h2>Act 5: Práctica de Cookies (Nombre de Usuario)</h2>
+    <div class="cookie-practice">
+        <h3 id="bienvenida-cookie">Cargando datos de usuario...</h3>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
