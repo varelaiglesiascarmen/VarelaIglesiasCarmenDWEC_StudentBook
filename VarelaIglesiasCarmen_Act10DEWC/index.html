@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad 11 - Desarrollo Web Entorno Cliente</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1,
+        h2 {
+            color: #004a99;
+            border-bottom: 2px solid #004a99;
+            padding-bottom: 5px;
+        }
+
+        section {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input,
+        select,
+        textarea,
+        button {
+            font: inherit;
+            padding: 8px 12px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #ec9d0a;
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #805700;
+        }
+
+        .msg {
+            margin-top: 8px;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+
+        .error {
+            color: #9b0000;
+            background: #ffe6e6;
+            border: 1px solid #ffcccc;
+        }
+
+        .ok {
+            color: #006400;
+            background: #e6ff e6;
+            border: 1px solid #ccffcc;
+        }
+
+        .warning {
+            color: #a65a00;
+            background: #fff9e6;
+            border: 1px solid #ffecb3;
+        }
+
+        #contBarra {
+            width: 100%;
+            background-color: #eee;
+            border-radius: 20px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        #barraProgreso {
+            height: 25px;
+            background: linear-gradient(90deg, #4caf50, #8bc34a);
+            width: 0%;
+        }
+
+        #contextMenu {
+            display: none;
+            position: absolute;
+            background: white;
+            border: 1px solid #bbb;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            min-width: 150px;
+        }
+
+        #contextMenu div {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #contextMenu div:hover {
+            background-color: #f0f0f0;
+        }
+
+        #box {
+            width: 100%;
+            height: 300px;
+            background: #e0f2f1;
+            border: 1px solid #444;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #ball {
+            position: relative;
+            width: 50px;
+        }
+
+        #menuContextual div:hover {
+            background-color: #856330 !important;
+            color: white;
+        }
+
+        #ex7 table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: #fff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        #ex7 th,
+        #ex7 td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        #ex7 thead {
+            background-color: #004a99;
+            color: white;
+        }
+
+        #ex7 tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #ex7 tbody tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        #ex7 table:empty::after {
+            content: "No hay datos cargados. Pulsa el botón para empezar.";
+            display: block;
+            padding: 20px;
+            color: #888;
+            text-align: center;
+        }
+
+        .bloque {
+            border: 1px dotted #444;
+            padding: 15px;
+            margin-top: 10px;
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ejercicios de Dinamismo Web - jQuery</h1>
+
+    <section id="ex1">
+        <h2>Actividad 1</h2>
+        <button id="btnEx1">Mostrar Elementos</button>
+        <div class="contenedor-img" style="margin-top: 15px;">
+            <img id="imgEx1" src="img/gatete.png" alt="Imagen Dinámica" class="oculto-inicial"
+                style="display:none; max-width: 100%; border-radius: 8px;">
+        </div>
+    </section>
+
+    <section id="ex2">
+        <h2>Actividad 2</h2>
+        <div id="areaMenu"
+            style="background:#f4d6a8; padding:10px; cursor:pointer;display: flex; align-items: center; justify-content: center;">
+            Menú hamburguesa
+        </div>
+        <ul id="menuList" style="display:none;">
+            <li class="item-menu">Inicio</li>
+            <li class="item-menu">Sobre mí</li>
+        </ul>
+    </section>
+
+    <section id="ex3">
+        <h2>Actividad 3</h2>
+        <label for="selectCond">¿Desea rellenar el formulario?</label>
+        <select id="selectCond">
+            <option value="no">No, mantener oculto</option>
+            <option value="si">Sí, mostrar campos</option>
+        </select>
+
+        <form id="formDinamico" style="display:none; margin-top: 15px;">
+            <div class="row">
+                <label>Nombre completo:</label>
+                <input type="text" id="nombre" class="input-val" placeholder="Tu nombre">
+
+                <label>Correo electrónico:</label>
+                <input type="text" id="email" class="input-val" placeholder="ejemplo@correo.com">
+            </div>
+            <button type="submit" id="btnEnviarEx3">Enviar Datos</button>
+            <div id="msgErrorEx3" class="msg error" style="display:none;"></div>
+        </form>
+    </section>
+
+    <section id="ex4">
+        <h2>Actividad 4</h2>
+        <input type="text" id="inputTeclado" placeholder="Escribe algo y pulsa Enter">
+    </section>
+
+    <section id="ex5">
+        <h2>Actividad 5</h2>
+        <div class="row">
+            <button id="btnTodos">Animalitos</button>
+            <button id="btnGatos">Gatitos</button>
+            <button id="btnPerros">Perritos</button>
+            <button id="btnCerrar">Cerrar galería</button>
+        </div>
+
+        <div id="contenedorAnimales" class="bloque" style="display:none; min-height: 100px; margin-top: 15px;">
+            <div id="galeriaGrid" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
+        </div>
+    </section>
+
+    <section id="ex6">
+        <h2>Actividad 6</h2>
+        <div id="contBarra" style=" border:1px solid #a04406;">
+            <div id="barraProgreso" style="width:0%; height:20px; background:rgb(228, 161, 72);"></div>
+        </div>
+        <button id="btnAvanzar">Avanzar</button>
+        <button id="btnReset">Reiniciar</button>
+    </section>
+
+    <section id="ex7">
+        <h2>Actividad 7</h2>
+        <button id="btnAjax">Cargar Datos</button>
+        <table id="tablaAjax" border="1">
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <section id="ex8">
+        <h2>Actividad 8</h2>
+        <div id="bloque1" class="bloque"><strong>Cenicienta: </strong>es una historia de bondad. La muchacha demuestra
+            su
+            bondad tratando bien a sus hermanas cuando ellas nunca han sido condescendientes con ella y la lleva al
+            extremo cuando estas le piden perdón y las perdona sin pensárselo ofreciéndoles su cariño incondicional.
+        </div>
+        <br />
+        <div id="bloque2" class="bloque"><strong>Blancanieves: </strong>el cuento es especialmente útil para explicar el
+            significado de un valor negativo como es la envidia, a través del personaje de la malvada Reina. Asimismo,
+            nos habla de lo importante que es la obediencia, y nos muestra un ejemplo de lo que ocurre cuando no se
+            obedecen los consejos de las personas que nos quieren. Es lo que sucede con Blancanieves, a quien los
+            enanitos dicen que no debe abrir y sin embargo acaba haciéndolo.
+            Por otro lado, nos muestra algo positivo como es la generosidad, a través de los personajes de los siete
+            enanitos, que acogen a Blancanieves sin conocerla de nada y cuidan de ella.</div>
+        <br />
+        <div id="bloque3" class="bloque"><strong>El Gato con Botas: </strong>este cuento nos demuestra lo lejos que
+            podemos llegar
+            utilizando nuestro ingenio, tal y como hace el gato, que con su astucia es capaz de conseguir algo que a
+            priori parece imposible como es el hecho de que el Rey quiera darle a su amo la mano de su hija.</div>
+        <br />
+        <button id="btnCambioTexto">Cambiar Bloques</button>
+    </section>
+
+    <section id="ex9">
+        <h2>Actividad 9</h2>
+        <form id="formValidar">
+            <div class="campo-grupo">
+                <label>Nombre completo:</label>
+                <input type="text" id="nombreValidar" placeholder="Nombre">
+                <div id="errorNombre" class="msg error" style="display:none;">
+                    Este campo solo admite letras y espacios.
+                </div>
+            </div>
+
+            <div class="campo-grupo">
+                <label>Teléfono:</label>
+                <input type="text" id="telefono" placeholder="Teléfono">
+                <div id="errorTelefono" class="msg error" style="display:none;">
+                    Este campo solo admite números.
+                </div>
+            </div>
+
+            <button type="submit" style="margin-top: 15px;">Enviar Formulario</button>
+        </form>
+        <div id="notificacionExito" class="msg ok" style="display:none;">Formulario enviado con éxito</div>
+    </section>
+
+    <section id="ex10">
+        <h2>Actividad 10</h2>
+        <div id="zonaClickDerecho"
+            style="height:50px; background:#f4d6a8; display: flex; align-items: center; justify-content: center; cursor: context-menu;">
+            Haz click derecho aquí para desplegar el menú contextual
+        </div>
+
+        <div id="menuContextual" class="context-menu"
+            style="display:none; position:absolute; z-index:1000; background:white; border:1px solid #bbb; padding:5px; border-radius:5px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2);">
+            <div id="optMayus" style="padding: 8px; cursor: pointer;">Cambiar títulos a mayúsculas</div>
+            <div id="optColor" style="padding: 8px; cursor: pointer;">Cambiar colores</div>
+            <div id="optMsg" style="padding: 8px; cursor: pointer;">Envía un mensaje</div>
+            <div id="optGato" style="padding: 8px; cursor: pointer;">Muestra un gato</div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
