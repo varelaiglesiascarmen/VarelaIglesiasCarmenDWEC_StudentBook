@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad 12 - Desarrollo Asíncrono y AJAX</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #004a99;
+            border-bottom: 2px solid #004a99;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        hr {
+            margin: 30px 0;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
+
+        button {
+            padding: 10px 16px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ec9d0a;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #805700;
+        }
+
+        .resultado-box {
+            margin-top: 10px;
+            padding: 15px;
+            border-radius: 4px;
+            background: #ffffff;
+            border: 1px solid #ddd;
+            white-space: pre-wrap; 
+        }
+
+        .cargando { background: #fff9e6; color: #a65a00; border: 1px solid #ffecb3; }
+        .exito { background: #e6ffe6; color: #006400; border: 1px solid #ccffcc; }
+        .error { background: #ffe6e6; color: #9b0000; border: 1px solid #ffcccc; }
+        .info { background: #e6f0ff; color: #003366; border: 1px solid #cce0ff; }
+    </style>
+</head>
+
+<body>
+
+    <h1>Actividad 12: Desarrollo Asíncrono y AJAX</h1>
+
+    <h2>Ejercicio 1 y 4: GET con AJAX y manejo de errores</h2>
+    <p>Realizaré una petición GET, si es exitosa devolverá un JSon con la respuesta a la petición. Si falla, muestra el error en consola.</p>
+    <button onclick="ejercicio1()">Enviar petición (GET)</button>
+    <div id="resultado1" class="resultado-box"></div>
+
+    <hr>
+
+    <h2>Ejercicio 2: POST con AJAX</h2>
+    <p>Envíiaremos datos JSON (en este caso un objeto con nombre: Juan, edad: 25) al servidor.</p>
+    <button onclick="ejercicio2()">Enviar petición (POST)</button>
+    <div id="resultado2" class="resultado-box"></div>
+
+    <hr>
+
+    <h2>Ejercicio 3: Actualizar elemento HTML</h2>
+    <p>En esta petición obtendremos el nombre de un usuario el cual se mostrará en la página abajo:</p>
+    <div id="nombreUsuario" class="resultado-box info">Nombre del usuario</div>
+    <button onclick="ejercicio3()">Petición Usuario</button>
+
+    <hr>
+
+    <h2>Ejercicio 5: Comparar GET y POST</h2>
+    <p>Al comparar GET y POST, se observan diferencias en velocidad, uso y seguridad.</p>
+    <button onclick="ejercicio5()">Descubre cuáles son</button>
+    <div id="explicacion5" class="resultado-box"></div>
+
+    <hr>
+
+    <h2>Ejercicio 6 y 7: Carga asíncrona y JSON</h2>
+    <p>Ahora cargaré una tarea (ToDo) con la petición e imprimirá el título en pantalla.</p>
+    <div id="contenidoWeb" class="resultado-box info">Buscando contenido</div>
+    <button onclick="ejercicio6()">Descubre la tarea asíncrona</button>
+
+    <hr>
+
+    <h2>Ejercicio 8: Eventos y AJAX</h2>
+    <p>Al hacer click romperemos la petición AJAX.</p>
+    <button id="btnEvento">Romper petición</button>
+    <div id="resultado8" class="resultado-box"></div>
+
+    <hr>
+
+    <h2>Ejercicio 9: Estado de la petición (Cargando...)</h2>
+    <button onclick="ejercicio9()">Cargar con Indicador</button>
+    <div id="estadoPeticion" class="resultado-box">Esperando acción...</div>
+
+    <hr>
+
+    <h2>Ejercicio 10: Seguridad en AJAX</h2>
+    <p>Evaluación de problemas de seguridad (Dominios cruzados/XSS).</p>
+    <button onclick="ejercicio10()">Evaluar Seguridad</button>
+    <div id="seguridadLog" class="resultado-box error"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
